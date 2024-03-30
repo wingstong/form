@@ -125,6 +125,16 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/textView666"
+        android:layout_width="220dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Choose your option"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCat" />
+
     <RadioButton
         android:id="@+id/radioButtonSalary"
         android:layout_width="110dp"
@@ -133,10 +143,10 @@
         android:text="Salary"
         app:layout_constraintBottom_toTopOf="@+id/editTextSalary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView666"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxFish"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.782" />
 
     <Button
         android:id="@+id/button"
@@ -145,40 +155,31 @@
         android:text="send form"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSalary"
-        app:layout_constraintVertical_bias="0.307" />
-
-    <TextView
-        android:id="@+id/textView666"
-        android:layout_width="220dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Choose your option"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxCat" />
-
-    <EditText
-        android:id="@+id/editTextSalary"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="68dp"
-        android:inputType="numberDecimal"
-        android:text="Desired salary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView666" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <RadioButton
         android:id="@+id/radioButtonVolunteer"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
 
         android:text="Volunteer"
         app:layout_constraintEnd_toStartOf="@+id/radioButtonSalary"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView666" />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:inputType="numberDecimal"
+        android:text="Desired salary"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView666" />
 
